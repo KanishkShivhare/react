@@ -1,14 +1,14 @@
-require("dotenv").config({path:"./.evn"})
+require("dotenv").config({path:"./.env"})
 
 const express = require("express");
 const app = express();
 
 // on top
 // const dotenv = require("dotenv");
-// dotenv.config({path:"./.evn"})   
+// dotenv.config({path:"./.env"})   
 
-// const PORT = process.env.PORT; dirct 
+// const PORT = process.env.PORT; dirct
 
-app.listen(PORT,()=>{
+app.listen(process.env.PORT,()=>{
     console.log(`The Server is running on port ${process.env.PORT}`)
 })
